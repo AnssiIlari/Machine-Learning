@@ -41,7 +41,7 @@
 	Label column: Diabetic
 
 #### Two-class Logistic Regression module: 
-	Because Diabetic result is binary 0 / 1)
+	Because Diabetic result is binary (0 / 1)
 
 #### Score-model module:
 	for scoring the validation dataset
