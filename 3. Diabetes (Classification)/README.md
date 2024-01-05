@@ -58,3 +58,47 @@
 
 ![evalution results](images/evaluationresults.png)
 ![evalution results](images/evalutionresults2.png)
+
+### Creating an inference pipeline
+
+	-removed the original diabetes dataset
+	-added "Enter data manually" module (does not include "Diabetic" column)
+	-removed "Evaluate model" module
+	-added a "Excecute Python Script" module to return only patient ID, predicted
+	label value and probability
+
+	import pandas as pd
+	def azureml_main(dataframe1 = None, dataframe2 = None):
+   	 scored_results = dataframe1[['PatientID', 'Scored Labels', 'Scored Probabilities']]
+    	scored_results.rename(columns={'Scored Labels':'DiabetesPrediction',
+                      	          'Scored Probabilities':'Probability'},
+                    	    inplace=True)
+   	 return scored_results
+
+	(had to do the code up above several times)
+
+![inference schema](images/inferencebeforefun.png)
+
+#### Time to run the pipeline
+
+![pipeline prediction](images/pipelineprediction1.png)
+
+### Deploying a predictive service
+
+	Deploying a service with Azure Container Instance
+
+	Waited for a few minutes (40) for the model to get up and running properly
+
+	In the mean time created a new jupyter notebook with test code in it (provided in 	github)
+
+ ### Endpoint in action
+
+ ![end point](images/endpoint1.png)
+ ![end point](images/endpoint2.png)
+
+ #### Consume page reveals the endpoint address and API-keys
+	Added these to the test code and the endpoint gave a succesful prediction and respose.
+
+ ![result](images/lastprediction.png)
+
+	
