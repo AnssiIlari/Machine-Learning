@@ -44,7 +44,7 @@
 	Because Diabetic result is binary 0 / 1)
 
 #### Score-model module:
-	"for scoring the validation dataset"
+	for scoring the validation dataset
 
 ### Time for second run
 
