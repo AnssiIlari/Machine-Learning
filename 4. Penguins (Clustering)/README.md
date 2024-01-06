@@ -37,7 +37,7 @@ Basic Info:
 
 ## First run
 
-![First run complete](images/firsruncomplete.png)
+![First run complete](images/firstruncomplete.png)
 ![First run details](images/firstruncomplete2.png)
 
 ## Extend the pipeline to train a model
