@@ -8,9 +8,4 @@ This repository is dedicated to exploring the fundamentals of Machine Learning, 
 - **Azure ML:** Demonstrates the implementation and integration of Azure Machine Learning services.
 - **LLM Project:** Showcases a specific project focusing on Large Language Models as part of FreeCodeCamp's learning path.
 
-## Repository Structure
-- `ML_Basics/`: Contains introductory concepts and examples of machine learning.
-- `Azure_ML/`: Focused on projects and examples using Azure Machine Learning.
-- `FreeCodeCamp_LLM/`: Dedicated to the Large Language Model project, including design, development, and findings.
-
 *This README is subject to updates as the projects progress and new learnings are integrated.*
